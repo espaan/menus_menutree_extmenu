@@ -1,7 +1,0 @@
-
-The list of templates, style sheets and plugins is available online:
-
-http://www.blanktheme.org/wiki/main/tag/MenutreeTemplates
-
-This page will be kept uptodate with the latest templates and information.
-05-06-2008, Erik Spaan
