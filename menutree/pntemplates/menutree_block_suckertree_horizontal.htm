@@ -1,0 +1,17 @@
+<!--[* $Id: menutree_block_suckertree_horizontal.htm 236 2008-08-08 13:02:03Z espaan $ *]-->
+<!--[pnpageaddvar name="javascript" value="modules/menutree/pnjavascript/suckertreehoriz.js"]-->
+<script type="text/javascript">
+/***********************************************
+* SuckerTree Horizontal Menu (Sept 14th, 06)
+* By Dynamic Drive: http://www.dynamicdrive.com/style/
+***********************************************/
+//Add the id to the SuckerTree UL menus ids var
+var sthmenuids = sthmenuids.concat(["<!--['menu'|cat:$blockinfo.bid]-->"] )
+if (window.addEventListener)
+ window.addEventListener("load", sth_buildsubmenus, false)
+else if (window.attachEvent)
+ window.attachEvent("onload", sth_buildsubmenus)
+</script>
+<div class="st_horiz">
+<!--[menutree data=$menutree_content id='menu'|cat:$blockinfo.bid]-->
+</div>

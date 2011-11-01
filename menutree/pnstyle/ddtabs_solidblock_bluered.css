@@ -1,0 +1,92 @@
+/* $Id: ddtabs_solidblock_bluered.css 460 2009-12-13 18:28:31Z espaan $ */
+/*=============================================================================
+Original at http://www.dynamicdrive.com/dynamicindex1/droptabmenu.htm 
+Adapted for Zikula menutree, Erik Spaan, http://code.zikula.org/blanktheme
+=============================================================================*/
+.solidblocktabs{
+font: bold 13px Arial;
+border: 1px solid #666;
+border-width: 1px 0;
+background: #3a6594 url(../pnimages/ddtabs_solidblock/sb_blue.gif) center center repeat-x;
+margin:0;
+padding:0;
+float:left;
+width:100%;
+}
+
+* html .solidblocktabs{ /*IE only. Add 1em spacing between menu and rest of content*/
+margin-bottom:1em;
+}
+
+.solidblocktabs ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+.solidblocktabs li{
+display:inline;
+margin:0;
+padding:0;
+}
+
+.solidblocktabs li a{
+color: #f9f9f9;
+padding: 9px 11px;
+border-right: 1px solid white;
+float:left;
+margin:0;
+text-decoration:none;
+}
+
+.solidblocktabs a:link, .solidblocktabs li.selected a:link, .solidblocktabs a:active, .solidblocktabs li.selected a:active{
+color: #f9f9f9;
+text-decoration:none;
+}
+
+.solidblocktabs a:hover, .solidblocktabs li.selected a{
+color: white;
+background: transparent url(../pnimages/ddtabs_solidblock/sb_red.gif) center center repeat-x;
+text-decoration:none;
+}
+
+html>/**/body .IEonlybr{ /*None IE browsers hack*/
+display: none; /*Hide BR tag in non IE browsers, since it's not needed*/
+}
+
+/* ######### Style for Drop Down Menu ######### */
+.dropmenudiv_sbt{
+position:absolute;
+font: normal 12px Verdana;
+background-color: #980e10;
+border:0;
+width: 200px;
+margin:0;
+padding:0;
+top:0;
+line-height:18px;
+z-index:110;
+visibility: hidden;
+}
+
+.dropmenudiv_sbt a{
+border: 0 solid white;
+border-bottom-width: 1px;
+padding: 2px 0;
+font-weight: bold;
+color: #f9f9f9;
+text-indent: 5px;
+width:auto;
+display:block;
+text-decoration:none;
+}
+
+* html .dropmenudiv_sbt a{ /*IE only hack*/
+width:100%;
+}
+
+.dropmenudiv_sbt a:hover{
+background-color: #cf1519;
+color: white;
+text-decoration:none;
+}

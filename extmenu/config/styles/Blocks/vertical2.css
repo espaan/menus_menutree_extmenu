@@ -1,0 +1,34 @@
+.navcontainer_v {
+/*  width: 200px;
+  margin: 10px;*/
+  border-style:solid solid none solid;
+  border-color:#D8D5D1;
+  border-width:1px;
+}
+.navcontainer_v ul, .navcontainer_v ul li {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.navcontainer_v li a {
+  height:32px;
+  voice-family:"\"}\""; 
+  voice-family:inherit;
+  height:24px;
+  text-decoration:none;
+}
+.navcontainer_v li a:link, .navcontainer_v li a:visited {
+  color:#3688BA;
+  display:block;
+  background:url(../../../images/menu/vertical/ebmenu2.gif);
+  padding:8px 0 0 30px;
+}
+.navcontainer_v li a:hover, .navcontainer_v li.selected a {
+  color:#3688BA;
+  background:url(../../../images/menu/vertical/ebmenu2.gif) 0 -32px;
+  padding:8px 0 0 32px;
+  text-decoration:none;
+}
+/* Holly Hack for IE \*/
+* html .navcontainer_v ul li { float: left; height: 1%; }
+/* End */

@@ -1,0 +1,23 @@
+<!--[* $Id: menutree_block_suckertree_vertical.htm 250 2008-08-14 14:28:21Z espaan $ *]-->
+<!--[pnpageaddvar name="javascript" value="modules/menutree/pnjavascript/suckertreevert.js"]-->
+<script type="text/javascript">
+/***********************************************
+* SuckerTree Vertical Menu 1.1 (Nov 8th, 06)
+* By Dynamic Drive: http://www.dynamicdrive.com/style/
+***********************************************/
+//Add id to SuckerTree UL menu ids var
+var stvmenuids = stvmenuids.concat(["<!--['menu'|cat:$blockinfo.bid]-->"])
+if (window.addEventListener)
+ window.addEventListener("load", stv_buildsubmenus, false)
+else if (window.attachEvent)
+ window.attachEvent("onload", stv_buildsubmenus)
+</script>
+<div class="st_vert">
+<!--[menutree data=$menutree_content id='menu'|cat:$blockinfo.bid]-->
+</div>
+<!--[if $menutree_editlinks]-->
+<p class="menutreecontrols">
+  <a href="<!--[ pnmodurl modname=Blocks type=admin func=modify bid=$blockinfo.bid addurl=1 ]-->#menutree_tabs" title="<!--[ pnml name='_MENUTREE_ADDCURRENTURL_TITLE' ]-->"><!--[ pnml name='_MENUTREE_ADDCURRENTURL' ]--></a><br />
+  <a href="<!--[ pnmodurl modname=Blocks type=admin func=modify bid=$blockinfo.bid fromblock=1 ]-->" title="<!--[ pnml name='_MENUTREE_EDITTHISBLOCK_TITLE' ]-->"><!--[ pnml name='_MENUTREE_EDITTHISBLOCK' ]--></a>
+</p>
+<!--[/if]-->
