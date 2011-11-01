@@ -1,0 +1,62 @@
+/* $Id: suckertree_vertical_blue.css 460 2009-12-13 18:28:31Z espaan $ */
+/* Credits: Dynamic Drive CSS Library */
+/* URL: http://www.dynamicdrive.com/style/ */
+/* Adapted for Zikula menutree, Erik Spaan, http://code.zikula.org/blanktheme */
+
+.st_vert ul{
+width: 100%; /*Menu width*/
+background: #f9f9f9; /*Menu background*/
+border-bottom: 1px solid #999;
+margin:0 0 10px;
+padding:0;
+list-style:none;
+font: bold 1em "Trebuchet MS", "Lucida Sans", Verdana, Arial, sans-serif;
+}
+
+.st_vert ul li{
+position:relative;
+margin:0;
+padding:0;
+}
+
+/*Sub level menu items */
+.st_vert ul li ul{
+width: 150px; /*Submenu width*/
+background: #f9f9f9; /*Submenu background*/
+margin:0;
+padding:0;
+position:absolute;
+top:0;
+visibility:hidden;
+}
+
+/* Sub level menu links style */
+.st_vert ul li a{
+color: #4d87c7;
+background: #f9f9f9;
+padding: 1px 5px;
+border: 1px solid #999;
+border-bottom: 0;
+display:block;
+overflow:auto; /*force hasLayout in IE7*/
+text-decoration:none;
+}
+
+.st_vert ul li a:link{
+text-decoration: none;
+}
+
+.st_vert ul li a:hover{
+background: #4d87c7;
+color: #f9f9f9;
+text-decoration:none;
+}
+
+.st_vert .subfoldericon{
+background: url(../pnimages/suckertree/st_arrow_right_blue.gif) no-repeat center right;
+}
+
+/* Holly Hack for IE \*/
+* html .st_vert ul li { float: left; height: 1%; }
+* html .st_vert ul li a { height: 1%; }
+/* End */
