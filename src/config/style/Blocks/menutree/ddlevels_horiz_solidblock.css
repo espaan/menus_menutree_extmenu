@@ -1,0 +1,99 @@
+/* ######### Solidblock Main Menu Bar CSS ######### */
+.ddlevelsmenu ul{
+  margin: 0;
+  padding: 0;
+  font: bold 13px Arial;
+  list-style-type: none;
+  border: 1px solid #625e00;
+  border-width: 1px 0;
+  background: black url(../../../images/menutree/ddlevels/blockdefault.gif) center center repeat-x;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.ddlevelsmenu li{
+  display: inline;
+  margin: 0;
+}
+.ddlevelsmenu li a{
+  float: left;
+  display: block;
+  text-decoration: none;
+  margin: 0;
+  padding: 9px 11px; /*padding inside each tab*/
+  border-right: 1px solid white; /*right divider between tabs*/
+  color: white;
+  background: transparent;
+}
+.ddlevelsmenu li a:visited{
+  color: white;
+}
+.ddlevelsmenu li a:hover,
+.ddlevelsmenu li.selected a:hover{
+  background: transparent url(../../../images/menutree/ddlevels/blockactive.gif) center center repeat-x;
+  color: white;
+}
+.ddlevelsmenu a.selected,
+.ddlevelsmenu li.selected a,
+.ddlevelsmenu li.selected a.selected{
+  background: transparent url(../../../images/menutree/ddlevels/blockactive.gif) center center repeat-x;
+  color: white;
+}
+
+/* ######### Drop Down ULs CSS ######### */
+.ddlevelssubmenu, .ddlevelssubmenu ul{ /*topmost and sub ULs, respectively*/
+  font: normal 13px Verdana;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  list-style-type: none;
+  background: white;
+  border: 1px solid black;
+  border-bottom-width: 0;
+  visibility: hidden;
+  z-index: 200;
+}
+.ddlevelssubmenu li{
+  margin:0;
+}
+.ddlevelssubmenu li a{
+  display: block;
+  width: 160px; /*width of menu (not including side paddings)*/
+  color: black;
+  background-color: lightyellow;
+  text-decoration: none;
+  padding: 4px 5px;
+  border-bottom: 1px solid black;
+  text-align: left;
+}
+* html .ddlevelssubmenu li{ /*IE6 CSS hack*/
+  display: inline-block;
+  width: 170px; /*width of menu (include side paddings of LI A*/
+}
+.ddlevelssubmenu li a:hover{
+  background-color: black;
+  color: white;
+}
+
+/* ######### Neutral CSS  ######### */
+.downarrowpointer{ /*CSS for "down" arrow image added to top menu items*/
+  padding-left: 4px;
+  border: 0;
+}
+.rightarrowpointer{ /*CSS for "right" arrow image added to drop down menu items*/
+  position: absolute;
+  padding-top: 3px;
+  left: 100px;
+  border: 0;
+}
+.ddiframeshim{
+  position: absolute;
+  z-index: 500;
+  background: transparent;
+  border-width: 0;
+  width: 0;
+  height: 0;
+  display: block;
+}

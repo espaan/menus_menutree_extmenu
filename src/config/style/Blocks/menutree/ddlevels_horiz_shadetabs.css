@@ -1,0 +1,105 @@
+/* ######### Shade Tabs Main Menu Bar CSS ######### */
+/* More menus http://www.dynamicdrive.com/dynamicindex1/ddlevelsmenu/generator.htm */
+.ddlevelsmenu{
+border-bottom: 1px solid gray;
+margin-bottom: 1em;
+}
+
+.ddlevelsmenu ul{
+padding: 3px 0;
+margin-left: 0;
+margin-top: 1px;
+margin-bottom: 0;
+font: bold 12px Verdana;
+list-style-type: none;
+text-align: center; /*set to left, center, or right to align the menu as desired*/
+}
+
+.ddlevelsmenu li{
+display: inline;
+margin: 0;
+}
+
+.ddlevelsmenu li a{
+text-decoration: none;
+padding: 3px 7px;
+margin-right: 3px;
+border: 1px solid #778;
+color: #2d2b2b;
+background: white url(../../../images/menutree/ddlevels/shade.gif) top left repeat-x;
+}
+
+.ddlevelsmenu li a:visited{
+color: #2d2b2b;
+}
+
+.ddlevelsmenu li a:hover{
+color: #2d2b2b;
+}
+
+.ddlevelsmenu li a.selected{ /*selected main tab style */
+background-image: url(../../../images/menutree/ddlevels/shadeactive.gif);
+border-bottom-color: white;
+}
+
+.ddlevelsmenu li.selected a:hover{ /*selected main tab style */
+text-decoration: none;
+}
+
+/* ######### Drop Down ULs CSS ######### */
+.ddlevelssubmenu, .ddlevelssubmenu ul{ /*topmost and sub ULs, respectively*/
+  font: normal 13px Verdana;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  list-style-type: none;
+  background: white;
+  border: 1px solid black;
+  border-bottom-width: 0;
+  visibility: hidden;
+  z-index: 200;
+}
+.ddlevelssubmenu li{
+  margin:0;
+}
+.ddlevelssubmenu li a{
+  display: block;
+  width: 160px; /*width of menu (not including side paddings)*/
+  color: black;
+  background-color: lightyellow;
+  text-decoration: none;
+  padding: 4px 5px;
+  border-bottom: 1px solid black;
+  text-align: left;
+}
+* html .ddlevelssubmenu li{ /*IE6 CSS hack*/
+  display: inline-block;
+  width: 170px; /*width of menu (include side paddings of LI A*/
+}
+.ddlevelssubmenu li a:hover{
+  background-color: black;
+  color: white;
+}
+
+/* ######### Neutral CSS  ######### */
+.downarrowpointer{ /*CSS for "down" arrow image added to top menu items*/
+  padding-left: 4px;
+  border: 0;
+}
+.rightarrowpointer{ /*CSS for "right" arrow image added to drop down menu items*/
+  position: absolute;
+  padding-top: 3px;
+  left: 100px;
+  border: 0;
+}
+.ddiframeshim{
+  position: absolute;
+  z-index: 500;
+  background: transparent;
+  border-width: 0;
+  width: 0;
+  height: 0;
+  display: block;
+}

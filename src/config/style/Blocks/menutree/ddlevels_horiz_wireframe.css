@@ -1,0 +1,88 @@
+/* ######### Wire Frame Menu CSS ######### */    
+.ddlevelsmenu{
+font-weight: bold;
+width: 100%;
+border: 1px solid gray;
+border-width: 1px 0;
+}
+
+.ddlevelsmenu ul{
+padding: 6px 0 6px 0; /*1st and 3rd value should equal 1st and 3rd values of "padding" for link itself (see ul li a)*/
+margin: 0;
+text-align: center; //set value to "left", "center", or "right"*/
+}
+
+.ddlevelsmenu ul li{
+display: inline;
+}
+
+.ddlevelsmenu ul li a{
+color: #494949;
+padding: 6px 6px 6px 10px;
+margin: 0;
+text-decoration: none;
+border-left: 1px solid gray;
+}
+
+.ddlevelsmenu ul li a:hover, 
+.ddlevelsmenu ul li a.selected{
+color: black;
+}
+
+/* ######### Drop Down ULs CSS ######### */
+.ddlevelssubmenu, .ddlevelssubmenu ul{ /*topmost and sub ULs, respectively*/
+  font: normal 13px Verdana;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  list-style-type: none;
+  background: white;
+  border: 1px solid black;
+  border-bottom-width: 0;
+  visibility: hidden;
+  z-index: 200;
+}
+.ddlevelssubmenu li{
+  margin:0;
+}
+.ddlevelssubmenu li a{
+  display: block;
+  width: 160px; /*width of menu (not including side paddings)*/
+  color: black;
+  background-color: lightyellow;
+  text-decoration: none;
+  padding: 4px 5px;
+  border-bottom: 1px solid black;
+  text-align: left;
+}
+* html .ddlevelssubmenu li{ /*IE6 CSS hack*/
+  display: inline-block;
+  width: 170px; /*width of menu (include side paddings of LI A*/
+}
+.ddlevelssubmenu li a:hover{
+  background-color: black;
+  color: white;
+}
+
+/* ######### Neutral CSS  ######### */
+.downarrowpointer{ /*CSS for "down" arrow image added to top menu items*/
+  padding-left: 4px;
+  border: 0;
+}
+.rightarrowpointer{ /*CSS for "right" arrow image added to drop down menu items*/
+  position: absolute;
+  padding-top: 3px;
+  left: 100px;
+  border: 0;
+}
+.ddiframeshim{
+  position: absolute;
+  z-index: 500;
+  background: transparent;
+  border-width: 0;
+  width: 0;
+  height: 0;
+  display: block;
+}
