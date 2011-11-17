@@ -1,0 +1,33 @@
+/* Image making tutorial http://veerle.duoh.com/comments.php?id=208_0_2_5_C */
+.navcontainer_v {
+  width: 200px; /* Fixed width image ! */
+/*  margin: 10px;*/
+  border: 1px solid #ccc;
+}
+.navcontainer_v ul, .navcontainer_v ul li {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.navcontainer_v li a {
+  height:32px;
+  voice-family:"\"}\""; 
+  voice-family:inherit;
+  height:24px;
+  text-decoration:none;
+}
+.navcontainer_v li a:link, .navcontainer_v li a:visited {
+  color:#888;
+  display:block;
+  background:url(../../images/extmenu/vertical/elmenu3.gif) 0 0;
+  padding:8px 0 0 30px;
+}
+.navcontainer_v li a:hover, .navcontainer_v li a:active, .navcontainer_v li.selected a {
+  color:#283A50;
+  background:url(../../images/extmenu/vertical/elmenu3.gif) 0 -32px;
+  padding:8px 0 0 30px;
+  text-decoration:none;
+}
+/* Holly Hack for IE \*/
+* html .navcontainer_v ul li { float: left; height: 1%; }
+/* End */
